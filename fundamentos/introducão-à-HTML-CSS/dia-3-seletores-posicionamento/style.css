@@ -1,0 +1,46 @@
+#cabecario {
+   width: 100%;
+
+   background-color:rgb(75, 73, 73) 
+}
+
+#nome {
+    color: rgb(136, 139, 139);
+     top: 20px;
+     position: relative;
+     left: 700px;
+    }
+
+#minhaFoto {
+    width: 200px;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    right: 70px;
+}
+
+
+#sou {
+    position: relative;
+    top: 100px;
+    width: max-content;
+    background-color: aquamarine;
+}
+
+#qualidade {
+    position: relative;
+    top: 130px;
+
+}
+
+#siteblogs {
+    position: relative;
+    top: 100px;   
+    color: aqua; 
+}
+
+#setim {
+    top: 500px;
+
+}
