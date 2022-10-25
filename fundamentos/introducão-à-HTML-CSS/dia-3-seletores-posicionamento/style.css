@@ -25,7 +25,8 @@
     position: relative;
     top: 100px;
     width: max-content;
-    background-color: aquamarine;
+    background-color: rgb(162, 167, 167);
+
 }
 
 #qualidade {
@@ -37,10 +38,15 @@
 #siteblogs {
     position: relative;
     top: 100px;   
-    color: aqua; 
+    color: rgb(70, 71, 71); 
 }
 
 #setim {
-    top: 500px;
+    background-color: rgb(162, 167, 167);
+    position: relative;
+    top: 100px;
 
 }
+
+h1, h2, h3 {color: rgb(44, 122, 122);}
+
