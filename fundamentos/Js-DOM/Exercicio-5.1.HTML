@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Exercício - JavaEscripito </h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+        /*
+
+
+
+
+
+
+      Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+      - document.getElementById()
+      - document.getElementsByClassName()
+      - document.getElementsByTagName()
+      1. Crie e execute uma função que mude o texto na tag `<p>-----</p>`, para uma descrição de como você se vê daqui a 2 anos. 
+      (Não gaste tempo pensando no texto e sim realizando o exercício)
+      2. Crie e execute uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+      3. Crie e execute uma função que mude a cor do quadrado vermelho para branco.
+      4. Crie e execute uma função que corrija o texto da tag <h1>.
+      5. Crie e execute uma função que modifique o texto da primeira tag <p> para maiúsculo.
+      6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
+      */
+
+     document.getElementsByTagName("p")[1].innerText = "Muito bem financeiramente e mentalmente";
+        
+
+    </script>
+  </body>
+</html>
+
+
+// let emergencyH3 = document.querySelectorAll('.emergency-tasks h3');
+// function emergenciaH3() { 
+// for (let i in emergencyH3) {
+// emergencyH3[i].style.backgroundColor = 'purple';
+// }
+// }
+
+// let noEmergencyH3 = document.querySelectorAll('.no-emergency-tasks h3');
+// function semEmergenciaH3() {
+// for (let i2 in noEmergencyH3) {
+// noEmergencyH3[i2].style.backgroundColor = 'black';
+// }
+// }
+
+// emergenciaH3();
+// semEmergenciaH3();
+
+const emergencyHeader= () => {
+let emergency = document.querySelectorAll('.emergency-tasks h3');
+for (let index = 0; index < emergencyHeader.length; index += 1){
+emergencyHeader[index].style.backgroundColor = "purple";
+}
+}
+emergencyHeader()
+const noEmergencyHeader= () => {
+let emergency = document.querySelectorAll('.no-emergency-tasks h3');
+for (let index = 0; index < noEmergencyHeader.length; index += 1){
+noEmergencyHeader[index].style.backgroundColor = "purple";
+}
+}
+noEmergencyHeader() 
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+     document.getElementById("page-title").innerText = "Senhos dos aneis";
+     document.getElementById("second-paragraph").innerText = "Melhor dos melhores";
+     document.getElementById("subtitle").innerText = "O quanto e bom?";
+
+    </script>
+  </body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+     const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      document.getElementsByClassName ("paragraph");
+      paragraph.style.color = "blue";
+      document.getElementsByTagName("p")[0].innerText = "mudando o texto";
+     
+
+      
+    </script>
+  </body>
+</html>
+
+
